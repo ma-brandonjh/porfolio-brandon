@@ -25,8 +25,9 @@ export default function Home() {
           <Image
             priority
             src="/images/infinityq.jpg"
-            height={90}
-            width={90}
+            className={utilStyles.borderImage}
+            height={65}
+            width={65}
             alt=""
           />
         </Link>
