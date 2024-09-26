@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -18,8 +19,15 @@ export default function Home() {
         <p>
           <Link href='/posts/first-post'>Next Page</Link>
         </p>
-        
-        <Link href='https://www.infinityq.tech'>InfinityQ Technologies Inc.</Link>
+        <Link href='https://www.infinityq.tech'>
+          <Image
+            priority
+            src="/images/infinityq.jpg"
+            height={90}
+            width={90}
+            alt=""
+          />
+        </Link>
       </section>
     </Layout>
   );
