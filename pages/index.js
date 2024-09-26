@@ -19,6 +19,8 @@ export default function Home() {
         <p>
           <Link href='/posts/first-post'>Next Page</Link>
         </p>
+      </section>
+      <section>
         <Link href='https://www.infinityq.tech'>
           <Image
             priority
